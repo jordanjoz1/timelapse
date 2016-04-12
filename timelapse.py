@@ -55,7 +55,7 @@ def parseArgs():
 
 def checkIfRunning(name):
     pid = str(os.getpid())
-    pidfile = '/tmp/EYECAPTURE-' + name + '.pid'
+    pidfile = '/tmp/TIMELAPSE-' + name + '.pid'
 
     if os.path.isfile(pidfile):
         print "%s already exists, exiting" % pidfile
